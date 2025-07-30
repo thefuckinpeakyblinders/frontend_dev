@@ -1,0 +1,51 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 2rem;
+}
+
+.recipe-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: scale(1.02);
+}
+
+.recipe-image {
+  width: 100%;
+  height: auto;
+}
+
+.recipe-content {
+  padding: 1rem;
+}
+
+.toggle-btn {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  background: #ff8c42;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  .recipe-card {
+    grid-template-columns: 300px 1fr;
+  }
+}
